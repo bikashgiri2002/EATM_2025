@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatm Counter</title>
+</head>
+<body>
+    <h1 id="ouput"></h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">decrement</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        const output = document.getElementById('ouput');
+        let value = 0;
+        output.innerText = value;
+        const increment = () => {
+            value++;
+            output.innerText = value;
+        };
+        const decrement = () => {
+            value--;
+            output.innerText = value;
+        };
+        const reset = () => {
+            value = 0;
+            output.innerText = value;
+        };
+    </script>
+</body>
+</html>

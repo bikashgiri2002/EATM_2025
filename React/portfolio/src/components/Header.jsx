@@ -2,17 +2,19 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full h-[80px] bg-orange-400">
-        <div className="flex justify-between items-center h-full px-4">
-          <h1 className="text-2xl font-bold text-white">Bikash's Portfolio</h1>
-          <ul className="flex space-x-4 text-white">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+    <header className="bg-orange-400 w-full">
+      <div className="max-w-6xl mx-auto h-[80px] flex justify-between items-center px-4">
+        <h1 className="text-2xl font-bold text-white">Bikash's Portfolio</h1>
+        <nav>
+          <ul className="flex space-x-4 text-white font-medium">
+            <li className="hover:underline cursor-pointer">Home</li>
+            <li className="hover:underline cursor-pointer">About</li>
+            <li className="hover:underline cursor-pointer">Projects</li>
+            <li className="hover:underline cursor-pointer">Contact</li>
           </ul>
-        </div>
-    </div>
+        </nav>
+      </div>
+    </header>
   );
 };
 
