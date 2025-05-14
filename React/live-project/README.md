@@ -1,0 +1,2 @@
+## start 
+`npm init`
